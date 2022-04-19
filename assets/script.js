@@ -145,11 +145,11 @@ async function createPaleta() {
 function abrirModalDelete(id) {
   document.querySelector("#overlay-delete").style.display = "flex";
 
-  const btnSim = document.querySelector(".btn_delete_yes")
+  const btnSim = document.querySelector(".btn_delete_yes");
 
-  btnSim.addEventListener("click", function() {
+  btnSim.addEventListener("click", function () {
     deletePaleta(id);
-  })
+  });
 }
 
 function fecharModalDelete() {
@@ -168,7 +168,7 @@ async function deletePaleta(id) {
   const result = await response.json();
   alert(result.message);
 
-  document.getElementById("paletaList").innerHTML = ""
+  document.getElementById("paletaList").innerHTML = "";
 
   fecharModalDelete();
   findAllPaletas();
