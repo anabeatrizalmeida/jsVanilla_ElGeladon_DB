@@ -54,7 +54,7 @@ async function findByIdPaletas() {
     return;
   }
 
-  document.querySelector(".list-all").style.display = "block"
+  document.querySelector(".list-all").style.display = "block";
   document.querySelector(".paleta-list").style.display = "none";
   const chosenPaletaDiv = document.querySelector("#chosen-paleta");
 
@@ -160,7 +160,7 @@ async function submitPaleta() {
 function showModalDelete(id) {
   document.querySelector("#overlay-delete").style.display = "flex";
 
-  const btnSim = document.querySelector(".btn_delete_yes");
+  const btnSim = document.querySelector(".btn-delete-yes");
 
   btnSim.addEventListener("click", function () {
     deletePaleta(id);
